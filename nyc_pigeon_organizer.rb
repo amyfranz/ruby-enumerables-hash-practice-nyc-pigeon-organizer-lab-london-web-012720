@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
   	  array_color = []
   	  puts data[:color][test].include?(name)
   	  if data[:color][test].include?(name) == true
-  	    new_hash[name][:color].unshift(test)
+  	    new_hash[name][:color].unshift(test.delete(':'))
   	    puts "cool"
   	  end
   	end
